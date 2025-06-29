@@ -49,6 +49,7 @@ jobs:
 
   tests:
     runs-on: ubuntu-latest
+    needs: security-checks
     steps:
     - name: Unit Test Cases
       run: mvn test
